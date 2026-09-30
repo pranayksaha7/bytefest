@@ -1,0 +1,87 @@
+/* ByteFest 2026 -- mobile-first stylesheet for NCSC101 Module 5 */
+
+/* ---------- base: applies to every screen (phones first) ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1b2430;
+  background: #fbfaf7;
+}
+
+.site-header {
+  background: #1d4e89;
+  color: white;
+  padding: 1.5rem 1rem;
+}
+.site-header h1 { margin: 0; font-size: 2rem; }
+.tagline { margin: 0.25rem 0 1rem; color: #cfe0f5; }
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.nav-links a { color: white; font-weight: bold; }
+.nav-links a:hover,
+.nav-links a:focus { color: #ffd166; }
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+section { margin-bottom: 2rem; }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.card {
+  background: white;
+  border: 1px solid #d0d7e2;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.card h3 { margin: 0.5rem 0 0.25rem; }
+.card p  { margin: 0; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid #d0d7e2;
+}
+
+form { display: grid; gap: 0.5rem; max-width: 28rem; }
+input, select, button { font: inherit; padding: 0.5rem; }
+button {
+  background: #1d4e89;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover, button:focus { background: #163d6c; }
+
+footer { text-align: center; padding: 1rem; color: #555; }
+
+/* ---------- tablets and wider ---------- */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------- laptops and wider ---------- */
+@media (min-width: 960px) {
+  .cards { grid-template-columns: repeat(4, 1fr); }
+  .site-header { padding: 3rem 2rem; }
+}

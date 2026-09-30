@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ByteFest 2026 | CSE, IIT (ISM) Dhanbad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>ByteFest 2026</h1>
+    <p class="tagline">Two days of code, circuits and talks at CSE</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#events">Events</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="events">
+      <h2>Events</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/hackathon.svg" alt="Laptop screen showing code brackets" width="320" height="180">
+          <h3>24-hour Hackathon</h3>
+          <p>Teams of three build something useful overnight.</p>
+        </article>
+        <article class="card">
+          <img src="images/linux-hunt.svg" alt="Terminal window with a blinking prompt" width="320" height="180">
+          <h3>Linux Treasure Hunt</h3>
+          <p>Follow clues hidden in files, logs and permissions.</p>
+        </article>
+        <article class="card">
+          <img src="images/web-sprint.svg" alt="Browser window with a page layout sketch" width="320" height="180">
+          <h3>Web Design Sprint</h3>
+          <p>Two hours, one brief, one responsive page.</p>
+        </article>
+        <article class="card">
+          <img src="images/robotics.svg" alt="Small wheeled robot with two sensor eyes" width="320" height="180">
+          <h3>Robotics Demo</h3>
+          <p>Line followers and drones from the student labs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <h2>Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Event</th>
+            <th scope="col">Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>09:30</td><td>Opening talk</td><td>Lecture Hall 1</td></tr>
+          <tr><td>10:30</td><td>Hackathon begins</td><td>CSE Lab 2</td></tr>
+          <tr><td>14:00</td><td>Linux Treasure Hunt</td><td>CSE Lab 1</td></tr>
+          <tr><td>16:00</td><td>Web Design Sprint</td><td>CSE Lab 3</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="register">
+      <h2>Register</h2>
+      <form action="register" method="get">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Institute email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="event">Event</label>
+        <select id="event" name="event">
+          <option>24-hour Hackathon</option>
+          <option>Linux Treasure Hunt</option>
+          <option>Web Design Sprint</option>
+          <option>Robotics Demo</option>
+        </select>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Department of CSE, IIT (ISM) Dhanbad</p>
+  </footer>
+</body>
+</html>
