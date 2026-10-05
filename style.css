@@ -73,7 +73,7 @@ button {
 }
 button:hover, button:focus { background: #163d6c; }
 
-footer { text-align: center; padding: 1rem; color: #555; }
+footer { text-align: center; padding: 1rem; color: #556; }
 
 /* ---------- tablets and wider ---------- */
 @media (min-width: 600px) {
